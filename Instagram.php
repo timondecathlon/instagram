@@ -15,14 +15,22 @@ class Instagram
         $this->data = json_decode($jsonData); //decoding and get the array
 	}  
 	
-	public function getPost($num) 
+	public function getPostImage($num) 
 	{
 		return $this->data->entry_data->ProfilePage[0]->graphql->user->edge_owner_to_timeline_media->edges[$num]->node->thumbnail_src;
 	}
 	
+	public function getPostText($num) 
+	{
+		return $this->data->entry_data->ProfilePage[0]->graphql->user->edge_owner_to_timeline_media->edges[$num]->node->edge_media_to_caption->edges[0]->node->text; 
+	}
 	
+	public function getPost($num) 
+	{
+		return $this->data->entry_data->ProfilePage[0]->graphql->user->edge_owner_to_timeline_media->edges[$num]->node->edge_media_to_caption->edges[0]->node;	
+	}
 	
-	public function getLink() 
+	public function getLink()   
 	{
 		return  $this->link;
 	} 
@@ -35,6 +43,11 @@ class Instagram
 	public function getUserName() 
 	{
 		return  $this->data->entry_data->ProfilePage[0]->graphql->user->username;
+	}
+	
+	public function getUserFullName() 
+	{
+		return  $this->data->entry_data->ProfilePage[0]->graphql->user->full_name;
 	}
 
     public function getUserPhoto()     
