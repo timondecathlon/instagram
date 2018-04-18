@@ -1,4 +1,4 @@
-A free library fo parsing INSTAGRAM - InstaBit
+A free library for parsing INSTAGRAM - InstaBit
 =============================
 
 Thank you for choosing InstaBit - an PHP library for parding Instagram.
@@ -23,7 +23,11 @@ Connect the Instagram.php to your project and take any info about Instagram acco
 
     Just create a new object ($insta = new Instagram($instagram_account_url)) 
     Then you can access any info of account you want by using avaliable methods
-
+    For example:
+        $insta->getPostImage($num)       // to get images of post where $num number of post
+        $insta->getUsPhoto()             // to get user profile image in hd 
+        $insta->getUserFollowers() etc.  // to get number of user's followes
+        
 
 WHAT's NEXT
 -----------
