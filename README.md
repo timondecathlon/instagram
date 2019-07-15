@@ -19,9 +19,9 @@ on Windows and Linux operating systems.
 QUICK START
 -----------
 
-Connect the Instagram.php to your project and take any info about Instagram account you want 
+Connect the Instagram.php to your project and take any info about Instagram account/post you want 
 
-    Just create a new object ($insta = new Instagram($instagram_account_url)) 
+    Just create a new object ($insta = new Instagram($instagram_account_url or $instagram_post_url)) 
     Then you can access any info of account you want by using avaliable methods
     For example:
         $insta->getPostImage($num)       // to get images of post where $num number of post
