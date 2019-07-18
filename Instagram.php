@@ -1,5 +1,5 @@
 <?
-namespace Bitkit\Social;
+
 class Instagram
 {
 
