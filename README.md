@@ -24,9 +24,9 @@ Connect the Instagram.php to your project and take any info about Instagram acco
     Just create a new object ($insta = new Instagram($instagram_account_url or $instagram_post_url)) 
     Then you can access any info of account you want by using avaliable methods
     For example:
-        $insta->getPostImage($num)       // to get images of post where $num number of post
-        $insta->getUserPhoto()             // to get user profile image in hd 
-        $insta->getUserFollowers() etc.  // to get number of user's followes
+        $insta->getPostPhoto()       // to get image of post 
+        $insta->getProfilePhoto()             // to get user profile image in hd 
+        $insta->getProfileFollowers() etc.  // to get number of user's followes
         
 
 WHAT's NEXT
