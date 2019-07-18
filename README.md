@@ -13,7 +13,7 @@ REQUIREMENTS
 ------------
 
 The minimum requirement by InstaBit is that your Web server supports
-PHP 5.1.0 or above. InstaBit has been tested with Apache HTTP server
+PHP 5.6.0 or above. InstaBit has been tested with Apache HTTP server and Nginx
 on Windows and Linux operating systems.
 
 QUICK START
